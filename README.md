@@ -9,7 +9,7 @@
 
 ## 📸 Screenshots
 
-*(Tempatkan screenshot aplikasi di sini nanti, misal: Dashboard, POS, dan Input Produk)*
+*(Coming Soon)*
 
 ---
 
