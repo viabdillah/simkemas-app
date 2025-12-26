@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "simkemas-api", 
+  "main": "src/index.ts",
+  "compatibility_date": "2025-12-25",
+  
+  // [PENTING] Wajib aktif untuk library security (bcryptjs/paseto)
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+
+  // [DATABASE] Konfigurasi D1
+  "d1_databases": [
+    {
+      "binding": "DB",           // Nama variabel yang dipanggil di kode Hono (c.env.DB)
+      "database_name": "simkemas-db",
+      "database_id": "a7b3c5ce-6dac-4f96-b8de-de2cbcc09b87" // Ganti dengan ID hasil 'npx wrangler d1 create'
+    }
+  ],
+
+  // [LOGGING] Membantu debugging saat development
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
